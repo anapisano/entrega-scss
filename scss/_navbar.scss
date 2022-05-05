@@ -1,0 +1,15 @@
+.navbar{
+    background-color: $color2 !important;
+    .navbar__div{
+        padding: 0 25px 0 25px;
+
+        .navbar__contenedorlogo{
+            height: 100px;
+            
+            .nav__logo{
+                height: 100% !important;
+            }
+        } 
+    }
+
+}
