@@ -1,0 +1,16 @@
+.paratocar{
+
+    h1{
+        @extend .tituloparaseo
+    }
+    h2{
+        text-align: map-get($titulosdiscos, alineacionTexto);
+        background-color: map-get($titulosdiscos, colorFondo);
+        font-style: map-get($titulosdiscos, estiloFuente);
+    }
+    h4{
+        background-color: $color6;
+        letter-spacing: 5px;
+        font-size: 30px;
+    }
+}

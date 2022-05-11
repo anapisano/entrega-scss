@@ -1,0 +1,5 @@
+@mixin propiedadesanimaciones ($nombre,$duracion,$repeticiones) {
+    animation-name: $nombre;
+    animation-duration: $duracion;
+    animation-iteration-count: $repeticiones;
+}

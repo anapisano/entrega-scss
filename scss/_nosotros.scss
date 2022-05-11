@@ -1,0 +1,56 @@
+.nosotros{
+    h1{
+        position: relative;
+        top: 200px;
+        word-spacing: 10px;
+        background-color: rgba(255, 255, 255, 0.24);
+        @include propiedadesanimaciones (pasando,20s,infinite);
+        animation-timing-function: linear;
+
+    }
+    .fotos{
+        position: relative;
+        bottom: 50px;
+    }
+    .tarjeta1{
+        background-color: $color6;
+        border-radius: 10px;
+        text-align: center;
+        height: auto;
+        
+        h3{
+            color: $color3;
+        }
+
+        p{
+            color: $color1;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 2rem;
+        
+        }
+    }
+
+    .tarjeta2{
+        @extend .tarjeta1
+    }
+
+    .tarjeta3{
+        @extend .tarjeta1
+    }
+}
+
+@keyframes pasando{
+    0%{
+        transform: translate(1200px,0px);
+    }
+    25%{
+        transform: translate(0px,0px);       
+    }
+    50%{
+        transform: translate(-1200px,0px);
+    }
+    100%{
+        transform: translate(-2000px,0);
+    }
+}

@@ -1,0 +1,71 @@
+.index{
+
+    h1{
+        animation-name: aparecertitulo;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        word-spacing: 10px;
+        color: $color1;
+    
+    }
+    
+    .dibujoyaudio{
+        @include propiedadesanimaciones(aparecerimg,7s,1 )
+    }
+
+    .dibujo1{
+        max-height: 350px;
+    }
+    .p1{
+        text-align: start;
+        @include propiedadesanimaciones (aparecerp1,5s,1)
+        
+    }
+    .p2{
+        text-align: end;
+        @include propiedadesanimaciones (aparecerp2,5s,1)
+    }
+    .dibujo2{
+        max-height: 350px;
+        width: auto;
+    }
+
+}
+
+@keyframes aparecertitulo{
+    0%{
+        opacity: 0;
+        word-spacing: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes aparecerimg{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;     
+    }
+}
+
+@keyframes aparecerp1{
+    0%{
+        transform: translate(-600px,0px);
+    }
+    100%{
+        transform: translate(0px,0px);       
+    }
+}
+
+@keyframes aparecerp2{
+    0%{
+        transform: translate(600px,0px);
+    }
+    100%{
+        transform: translate(0px,0px);       
+    }
+}
+

@@ -1,7 +1,5 @@
 .paraescuchar{
-
-    font-family: 'Raleway', sans-serif ;
-    
+       
     h4{
         text-align: center;
         background-color: $color3;
@@ -9,9 +7,10 @@
     }
     .paraescuchar__hijo1{
 
-        h6{
+        .tituloparaseo{
             letter-spacing: 4px;
             word-spacing: 4px;
+            font-size: medium;
 
         }
     }
