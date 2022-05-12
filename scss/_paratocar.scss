@@ -1,7 +1,9 @@
 .paratocar{
 
     h1{
-        @extend .tituloparaseo
+        letter-spacing: 4px;
+        word-spacing: 4px;
+        font-size: medium;
     }
     h2{
         text-align: map-get($titulosdiscos, alineacionTexto);

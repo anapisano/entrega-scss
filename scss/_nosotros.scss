@@ -54,3 +54,9 @@
         transform: translate(-2000px,0);
     }
 }
+
+@media screen and (max-widht:700px) {
+    h1{
+        display: none;
+    }
+}

@@ -156,6 +156,16 @@ ul {
   }
 }
 
+/*----- media querys ------*/
+@media screen and (max-width: 767px) {
+  .index .p1 {
+    text-align: center;
+  }
+  .index .p2 {
+    text-align: center;
+  }
+}
+
 .navbar {
   background-color: #D9C6BA !important;
 }
@@ -248,13 +258,19 @@ ul {
   }
 }
 
+@media screen and (max-widht: 700px) {
+  h1 {
+    display: none;
+  }
+}
+
 .paraescuchar h4 {
   text-align: center;
   background-color: #8C6764;
   font-style: italic;
 }
 
-.paraescuchar .paraescuchar__hijo1 .tituloparaseo, .paraescuchar .paraescuchar__hijo1 .paratocar h1, .paratocar .paraescuchar .paraescuchar__hijo1 h1 {
+.paraescuchar .paraescuchar__hijo1 h1 {
   letter-spacing: 4px;
   word-spacing: 4px;
   font-size: medium;
@@ -268,6 +284,12 @@ ul {
 .paraescuchar .paraescuchar__hijo3 .tinte__temas {
   border: 13px double #D9C6BA;
   border-radius: 40px 40px 40px 40px;
+}
+
+.paratocar h1 {
+  letter-spacing: 4px;
+  word-spacing: 4px;
+  font-size: medium;
 }
 
 .paratocar h2 {

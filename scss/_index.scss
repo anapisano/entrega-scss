@@ -69,3 +69,15 @@
     }
 }
 
+/*----- media querys ------*/
+
+@media screen and (max-width: 767px) {
+    .index{
+        .p1{
+            text-align:center;
+        }
+        .p2{
+            text-align: center;
+        }
+    }
+}
