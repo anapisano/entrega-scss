@@ -13,7 +13,7 @@
     <!-----tipografia----->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/style.css">
     <!-----favicon----->
@@ -37,7 +37,7 @@
                     <a class="nav-link" href="../index.html">INICIO</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../paginas/nosotros.html">NOSOTROS</a>
+                    <a class="local nav-link active" aria-current="page" href="../paginas/nosotros.html">NOSOTROS</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="../paginas/paraescuchar.html">PARA ESCUCHAR</a>
@@ -55,8 +55,9 @@
     </header>
 
     <main class="nosotros container-fluid">
-        <div class="fotos row">
-            <h1 class="text-center fst-italic">nuestra música nos define y nos definimos a través de ella.</h1>
+        <h1 class="text-center fst-italic mt-3">nuestra música nos define y nos definimos a través de ella.</h1>
+
+        <div class="fotos row m-4">
             <div class="col-12 col-sm-6 col-lg-4"><img class="img-fluid" src="../assets/img/foto nosotros 1.jpg" alt="fotoanalogicavitro"></div>
             <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-center"><img class="img-fluid" src="../assets/img/foto nosotros 2.png" alt="fotoanalogicavitro"></div>
             <div class="col-12 col-sm-6 col-lg-4"><img class="img-fluid" src="../assets/img/foto nosotros 3.jpg" alt="fotoanalogicavitro"></div>
@@ -64,7 +65,7 @@
 
         <div class="row justify-content-center">
 
-            <p class="col-sm-12 col-lg-10 mb-4" >Vitró es una banda del conurbano bonaerense, formada en el
+            <p class="col-sm-12 col-lg-10 m-4" >Vitró es una banda del conurbano bonaerense, formada en el
                     2019, en Ciudad Evita, La Matanza, Buenos Aires, Argentina.<br>
                     Está integrada por Lautaro Castro, en bajo y voz; Manuel
                     Durán, en guitarra y voz; y Agustín Contreras en batería y
@@ -85,7 +86,7 @@
         </div>
 
         <div class="row mx-2">
-            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <div class="contenedortarjeta col-12 col-sm-6 col-lg-4 mb-4">
                 <div class="tarjeta1 p-4">
                     <img class="img-fluid" src="../assets/img/img tarjeta agus.jpeg" alt="agusbateria">
                     <h3 class="p-2">Agustín Contreras</h3>
@@ -97,7 +98,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <div class="contenedortarjeta col-12 col-sm-6 col-lg-4 mb-4">
                 <div class="tarjeta2 p-4">
                     <img class="img-fluid" src="../assets/img/img tarjeta lau.jpeg" alt="laubajo">
                     <h3 class="p-2">Lautaro Castro</h3>
@@ -109,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <div class="contenedortarjeta col-12 col-sm-6 col-lg-4 mb-4">
                 <div class="tarjeta3 p-4">
                     <img class="img-fluid" src="../assets/img/img tarjeta manu.jpeg" alt="manuguitarra">
                     <h3 class="p-2">Manuel Duran</h3>
@@ -124,26 +125,37 @@
             
         </div>
     </main>
+    <footer class="container-fluid">
 
-    <footer>
-        
-        <div class="footer">
-
-            <h3 class="footer__copy">Copyright © Vitró Música Todos los derechos reservados</h3>
-
-            <ul class="footer__lista">
-                <li class="footer__item">
-                    <a class="footer__enlace" href="https://www.instagram.com/vitro_musica/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-                <li class="footer__item">
-                    <a class="footer__enlace" href="https://www.facebook.com/vitromusicaa/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
-                </li>
-                <li class="footer__item">
-                    <a class="footer__enlace" href="https://www.youtube.com/channel/UCo7tc8dcLcKVkDEb_57FTMg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                </li>
-            </ul>
-
+      <div class="footer row justify-content-center pt-1">
+  
+        <div class="col-12 col-md-4"><img class="img-fluid" src="../assets/img/logo.png" alt=""></div>
+  
+        <div  class="footer__contacto col-12 col-md-4">
+          <ul class="p-0">
+            <li><i class="fas fa-envelope"></i> vitromusica21@gmail.com</li>
+            <li><i class="fab fa-whatsapp"></i> +54 11 62139881</li>
+            <a href="https://cafecito.app/vitromusica3"><li><i class="fas fa-coffee"></i>Invitanos un cafecito</li></a>
+            <li><i class="fas fa-pencil"></i> Diseño y desarollo: Ana Lena Pisano</li>
+          </ul>
         </div>
+  
+        <div class="footer__redes col-12 col-md-3">
+          <p class="fst-italic m-0">nuestras redes:</p>
+          <ul class="d-flex p-0">
+            <li class="footer__item"><a class="footer__enlace" href="https://www.instagram.com/vitro_musica/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li class="footer__item"><a class="footer__enlace" href="https://www.facebook.com/vitromusicaa/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+            </li>
+            <li class="footer__item"><a class="footer__enlace" href="https://www.youtube.com/channel/UCo7tc8dcLcKVkDEb_57FTMg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+        </ul>
+  
+        </div>
+  
+        <p class="footer__copy row col-11 justify-content-center h6 mt-3">Copyright © Vitró Música Todos los derechos reservados</p>
+      
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

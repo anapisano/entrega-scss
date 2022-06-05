@@ -1,7 +1,15 @@
 .navbar{
     background-color: $color2 !important;
+    position:fixed;
+    width: 100%;
+    z-index: 100;
+
     .navbar__div{
         padding: 0 25px 0 25px;
+
+        .local{
+            background-color: $color6; 
+        }
 
         .navbar__contenedorlogo{
             height: 100px;
@@ -9,7 +17,17 @@
             .nav__logo{
                 height: 100% !important;
             }
-        } 
+        }
+        .collapse{
+            ul{
+                font-size: 18px; 
+                li{
+                    a:hover{
+                        background-color: $color6;
+                    }
+                }
+            }
+        }
     }
 
 }

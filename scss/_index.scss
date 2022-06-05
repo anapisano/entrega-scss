@@ -1,11 +1,13 @@
 .index{
-
+    padding-top: 120px;
     h1{
         animation-name: aparecertitulo;
         animation-duration: 5s;
         animation-iteration-count: 1;
         word-spacing: 10px;
         color: $color1;
+        font-family:'Cedarville Cursive';
+        font-size: 25px;
     
     }
     
@@ -18,12 +20,14 @@
     }
     .p1{
         text-align: start;
-        @include propiedadesanimaciones (aparecerp1,5s,1)
+        @include propiedadesanimaciones (aparecerp1,5s,1);
+        color: $color5;
         
     }
     .p2{
         text-align: end;
-        @include propiedadesanimaciones (aparecerp2,5s,1)
+        @include propiedadesanimaciones (aparecerp2,5s,1);
+        color: $color5;
     }
     .dibujo2{
         max-height: 350px;

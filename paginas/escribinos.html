@@ -13,7 +13,7 @@
     <!-----tipografia----->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/style.css">
 
@@ -47,7 +47,7 @@
                     <a class="nav-link" href="../paginas/paratocar.html">PARA TOCAR</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page">ESCRIBINOS</a>
+                    <a class="local nav-link active" aria-current="page">ESCRIBINOS</a>
                   </li>
                 </ul>
               </div>
@@ -55,10 +55,11 @@
           </nav>
     </header>
 
-    <main class="container-fluid">
-        <div class="row my-4 justify-content-center">
+    <main class="escribinos container-fluid">
+      <h1 class="text-center fst-italic p-3">(acá podés enviarnos tu consulta, sugerencia musical, inquietud, amor virtual...) </h1>
+        <div class="escribinos__hijo row justify-content-evenly">
             
-            <div class="col-11 col-sm-8 col-lg-5 m-xs-3 text-center">
+            <div class="escribinos__datos col-11 col-sm-6 col-lg-3 m-xs-3 pt-3 text-center">
                 <h4>mail de contacto:</h4>
                 <p>vitromusica21@gmail.com</p>
                 <h4>teléfonos de contacto:</h4>
@@ -66,22 +67,22 @@
                 <p>📞  (011) 59429768 - Lau - </p>
             </div>
 
-            <div class="escribinos col-11 col-sm-6 col-lg-4 m-xs-3 p-3 m-3">
+            <div class="escribinos__tarjeta col-11 col-sm-6 col-lg-4 m-xs-3 p-3 m-3">
                 <form action="">
                     <div class="form-group">
-                        <label for="nombre">Nombre</label>
-                        <input  class="form-control" ype="text" id="nombre" name="nombre" placeholder="Ana">
+                        <label for="nombre">Nombre:</label>
+                        <input  class="form-control" ype="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input  class="form-control" ype="email" id="email" name="email" placeholder="ani_fanvitro@gmail.com">
+                        <label for="email">Email:</label>
+                        <input  class="form-control" ype="email" id="email" name="email" placeholder="tumail@servidor.com">
                     </div>
                     <div class="form-group">
-                        <label for="telefono">Teléfono (cod área)</label>
+                        <label for="telefono">Teléfono (cod área):</label>
                         <input  class="form-control" type="number" id="telefono" placeholder="+54 11 34284475" name="telefono">
                     </div>
                     <div class="form-group">
-                        <label for="mensaje">Mensaje</label>
+                        <label for="mensaje">Mensaje:</label>
                         <textarea class="form-control" name="mensaje" id="mensaje" rows="5"></textarea>
                     </div>
                     <div class="form-group text-center pt-4">
@@ -92,23 +93,38 @@
         </div>
     </main>
 
-  <footer>
-      <div class="footer">
-          <h3 class="footer__copy">Copyright © Vitró Música Todos los derechos reservados</h3>
+    <footer class="container-fluid">
 
-          <ul class="footer__lista">
-              <li class="footer__item">
-                  <a class="footer__enlace" href="https://www.instagram.com/vitro_musica/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li class="footer__item">
-                  <a class="footer__enlace" href="https://www.facebook.com/vitromusicaa/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
-              </li>
-              <li class="footer__item">
-                  <a class="footer__enlace" href="https://www.youtube.com/channel/UCo7tc8dcLcKVkDEb_57FTMg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-              </li>
+      <div class="footer row justify-content-center pt-1">
+  
+        <div class="col-12 col-md-4"><img class="img-fluid" src="../assets/img/logo.png" alt=""></div>
+  
+        <div  class="footer__contacto col-12 col-md-4">
+          <ul class="p-0">
+            <li><i class="fas fa-envelope"></i> vitromusica21@gmail.com</li>
+            <li><i class="fab fa-whatsapp"></i> +54 11 62139881</li>
+            <a href="https://cafecito.app/vitromusica3"><li><i class="fas fa-coffee"></i>Invitanos un cafecito</li></a>
+            <li><i class="fas fa-pencil"></i> Diseño y desarollo: Ana Lena Pisano</li>
           </ul>
+        </div>
+  
+        <div class="footer__redes col-12 col-md-3">
+          <p class="fst-italic m-0">nuestras redes:</p>
+          <ul class="d-flex p-0">
+            <li class="footer__item"><a class="footer__enlace" href="https://www.instagram.com/vitro_musica/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li class="footer__item"><a class="footer__enlace" href="https://www.facebook.com/vitromusicaa/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+            </li>
+            <li class="footer__item"><a class="footer__enlace" href="https://www.youtube.com/channel/UCo7tc8dcLcKVkDEb_57FTMg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+        </ul>
+  
+        </div>
+  
+        <p class="footer__copy row col-11 justify-content-center h6 mt-3">Copyright © Vitró Música Todos los derechos reservados</p>
+      
       </div>
-  </footer>
+    </footer>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

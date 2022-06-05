@@ -1,6 +1,32 @@
 .escribinos{
-    background-color:$color2;
-    border-radius: 5px;
-    border: 2px solid $color3 ;
-    box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.43);
+    padding-top: 120px;
+    h1{
+        letter-spacing: 4px;
+        word-spacing: 4px;
+        font-size: 25px;
+        font-family: 'Cedarville Cursive';
+        margin: 0;
+    }
+
+    .escribinos__hijo{
+        align-items: center;
+            h4{
+                color: $color5;
+                font-weight: 500;
+            }
+        .escribinos__datos{
+            @extend .escribinos__tarjeta
+        }
+        .escribinos__tarjeta{
+            border-radius: 5px;
+            box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.43);
+            color: $color3;
+            button{
+                color: $color3;
+                background-color: #fff;
+                border-color: $color3;
+
+            }
+        }
+    }
 }

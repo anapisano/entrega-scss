@@ -1,4 +1,8 @@
 .paraescuchar{
+    padding-top: 120px;
+    p{
+        color: $color5;
+    }
        
     h4{
         text-align: center;
@@ -7,10 +11,11 @@
     }
     .paraescuchar__hijo1{
 
-        h1{
+        .subt{
             letter-spacing: 4px;
             word-spacing: 4px;
-            font-size: medium;
+            font-size: 25px;
+            font-family: 'Cedarville Cursive' 
 
         }
     }

@@ -1,9 +1,11 @@
 .paratocar{
-
+    padding-top: 120px;
     h1{
         letter-spacing: 4px;
         word-spacing: 4px;
-        font-size: medium;
+        font-size: 25px;
+        font-family: 'Cedarville Cursive' ;
+        
     }
     h2{
         text-align: map-get($titulosdiscos, alineacionTexto);
@@ -14,5 +16,6 @@
         background-color: $color6;
         letter-spacing: 5px;
         font-size: 30px;
+        color: $color5;
     }
 }
