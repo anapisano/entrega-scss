@@ -17,81 +17,41 @@
         }
 
     }
-
-    .tarjeta1{
+    .tarjeta{
         background-color: #d9c6ba57;
         text-align: center;
-        height: auto;
         border-radius: 5px;
         box-shadow: 5px 5px 8px 3px rgba(0,0,0,0.45);
-
+        height: auto;
+        overflow: hidden;
+        transition: display .15s;
         
         h3{
             color: $color3;
+        }
+        h5{
+            color: $color3;
             display: none;
         }
-
-        h5{
-            @extend h3
-        }
-
         p{
             color: $color3;
             font-size: 14px;
             line-height: 1.5;
             margin-bottom: 2rem;
-            display: none;
-        
+            display: none;     
         }
         img{
             border-radius: 5px;
         }
     }
-    .tarjeta1:hover{
-        @include  propiedadesanimaciones(animaciontarjetas,7s,1 )
-    }
-    .tarjeta2{
-        @extend .tarjeta1
-    }
-
-    .tarjeta3{
-        @extend .tarjeta1
-    }
-}
-
-
-@media screen and (max-widht:700px) {
-    h1{
-        display: none;
-    }
-}
-
-@keyframes animaciontarjetas {
-    0%{
-        .tarjeta1{
-            h3{
-                display: none;
-            }
-            h5{
-                display: none;
-            }
-            p{
-                display: none;
-            }  
+    .tarjeta:hover{
+        p{
+            display: block;
         }
+        h5{
+            display: block;
+        }
+        
     }
-
-    100%{
-        .tarjeta1{
-            h3{
-                display: block;
-            }
-            h5{
-                display: block;
-            }
-            p{
-                display: block;
-            }
-        }  
-    }
+    
 }

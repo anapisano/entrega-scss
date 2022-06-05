@@ -286,21 +286,28 @@ ul {
   border-radius: 5px;
 }
 
-.nosotros .tarjeta1, .nosotros .tarjeta2, .nosotros .tarjeta3 {
+.nosotros .tarjeta {
   background-color: #d9c6ba57;
   text-align: center;
-  height: auto;
   border-radius: 5px;
   -webkit-box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.45);
           box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.45);
+  height: auto;
+  overflow: hidden;
+  -webkit-transition: display .15s;
+  transition: display .15s;
 }
 
-.nosotros .tarjeta1 h3, .nosotros .tarjeta2 h3, .nosotros .tarjeta3 h3, .nosotros .tarjeta1 h5, .nosotros .tarjeta2 h5, .nosotros .tarjeta3 h5 {
+.nosotros .tarjeta h3 {
+  color: #8C6764;
+}
+
+.nosotros .tarjeta h5 {
   color: #8C6764;
   display: none;
 }
 
-.nosotros .tarjeta1 p, .nosotros .tarjeta2 p, .nosotros .tarjeta3 p {
+.nosotros .tarjeta p {
   color: #8C6764;
   font-size: 14px;
   line-height: 1.5;
@@ -308,81 +315,16 @@ ul {
   display: none;
 }
 
-.nosotros .tarjeta1 img, .nosotros .tarjeta2 img, .nosotros .tarjeta3 img {
+.nosotros .tarjeta img {
   border-radius: 5px;
 }
 
-.nosotros .tarjeta1:hover, .nosotros .tarjeta2:hover, .nosotros .tarjeta3:hover {
-  -webkit-animation-name: animaciontarjetas;
-          animation-name: animaciontarjetas;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+.nosotros .tarjeta:hover p {
+  display: block;
 }
 
-@media screen and (max-widht: 700px) {
-  h1 {
-    display: none;
-  }
-}
-
-@-webkit-keyframes animaciontarjetas {
-  0% {
-    .tarjeta1 {
-      h3 {
-        display: none;
-      }
-      h5 {
-        display: none;
-      }
-      p {
-        display: none;
-      }
-    }
-  }
-  100% {
-    .tarjeta1 {
-      h3 {
-        display: block;
-      }
-      h5 {
-        display: block;
-      }
-      p {
-        display: block;
-      }
-    }
-  }
-}
-
-@keyframes animaciontarjetas {
-  0% {
-    .tarjeta1 {
-      h3 {
-        display: none;
-      }
-      h5 {
-        display: none;
-      }
-      p {
-        display: none;
-      }
-    }
-  }
-  100% {
-    .tarjeta1 {
-      h3 {
-        display: block;
-      }
-      h5 {
-        display: block;
-      }
-      p {
-        display: block;
-      }
-    }
-  }
+.nosotros .tarjeta:hover h5 {
+  display: block;
 }
 
 .paraescuchar {
@@ -428,6 +370,7 @@ ul {
 }
 
 .paratocar h2 {
+  color: #D9C6BA;
   text-align: center;
   background-color: #8C6764;
   font-style: italic;

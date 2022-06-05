@@ -8,6 +8,7 @@
         
     }
     h2{
+        color: $color2;
         text-align: map-get($titulosdiscos, alineacionTexto);
         background-color: map-get($titulosdiscos, colorFondo);
         font-style: map-get($titulosdiscos, estiloFuente);
